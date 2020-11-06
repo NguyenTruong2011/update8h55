@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Them San phẩm</h2>
+        <form class="form-horizontal" method="POST" action="/addsanpham">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="firstname">Ho Sinh Vien:</label>
+                <div class="col-sm-10">
+                    <input type="text" name="firstname" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="lastname">Ten Sinh Vien:</label>
+                <div class="col-sm-10">
+                    <input type="text" name="lastname" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="gioitinh">Gioi tinh:</label>
+                <div class="col-sm-10">
+                    <input type="text" name="gioitinh" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="namsinh">Gioi Tinh:</label>
+                <div class="col-sm-10">
+                    Nam: <input type="radio" name="namsinh" value="Nam">
+                    Nu: <input type="radio" name="namsinh" value="Nu">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="diachi">Dia Chi:</label>
+                <div class="col-sm-10">
+                    OK:<input type="checkbox" name="diachi" value="ok">
+                    OKla:<input type="checkbox" name="diachi" value="okla">
+                    okthoi:<input type="checkbox" name="diachi" value="okthoi">
+                    koOK:<input type="checkbox" name="diachi" value="ko ok">
+                    Xiuok:<input type="checkbox" name="diachi" value="xiuok">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="/js/upload.js"></script>
+</body>
+
+</html>

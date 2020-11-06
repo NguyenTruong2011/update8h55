@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div>
+        <table border="1" style="margin: auto">
+            <tr>
+                <th>ID</th>
+                <th>LASTNAME</th>
+                <th>FIRST NAME</th>
+                <th>NAMSINH</th>
+                <th>GIOITINH</th>
+                <th>DIACHI</th>
+                <th>Hanh dong</th>
+            </tr>
+            <tr>
+                <% for(let i=0;i < dataSP.length;i++) { %>
+                <td><%=dataSP[i].id%></td>
+                <td><%=dataSP[i].lastname%></td>
+                <td><%=dataSP[i].firstname%></td>
+                <td><%=dataSP[i].namsinh%></td>
+                <td><%=dataSP[i].gioitinh%></td>
+                <td><%=dataSP[i].diachi%></td>
+                <td>
+                    <form action="/delete" method="POST">
+                        <input type="hidden" name="idsv" class="btn btn-danger" value="<%=dataSP[i].id%>" />
+                        <button type="submit">Xóa</button>
+                    </form>
+                </td>
+
+            </tr>
+            <% } %>
+        </table>
+        <button><a href='/addsp'>Thm san pham</a> </button>
+
+    </div>
+</body>
+
+</html>
